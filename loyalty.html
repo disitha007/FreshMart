@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshMart | Loyalty Program</title>
+    <link rel="stylesheet" href="/css/Nav.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/About.css" />
+    <link rel="stylesheet" href="./css/Order.css" />
+  </head>
+  <body>
+    <!--NavBar-->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="./images/logo.png" alt="logo" class="nav-logo" />
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item nav_li">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./dairy.html" class="nav-link">Dairy Products</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./vegetables.html" class="nav-link">Vegetables</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./cosmetics.html" class="nav-link">Cosmetics</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./loyalty.html" class="nav-link active_nav"
+              >Loyalty Program</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--Body-->
+    <div class="contatiner">
+      <section class="loyalty-program">
+        <h1 class="cat_topic_title cen">Join Our Loyalty Program</h1>
+        <p class="main_para">
+          Join our Loyalty Program today and start earning rewards on every
+          purchase. Enjoy exclusive discounts, special offers, and more!
+        </p>
+        <div class="loyalty-benefits">
+          <h2 class="cat_sub new_sub">Benefits</h2>
+          <ul class="point_one">
+            <li>Earn points for every dollar spent.</li>
+            <li>Exclusive discounts for members.</li>
+            <li>Access to special promotions and events.</li>
+            <li>Priority customer support.</li>
+          </ul>
+        </div>
+        <br />
+        <div class="signup-form">
+          <h1 class="cat_topic_title cen">
+            Sign Up <span class="cat_sub"> Now! </span>
+          </h1>
+
+          <form action="submit_loyalty.php" method="POST" class="order-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" />
+            <button type="submit" class="submit-btn">Join Now</button>
+          </form>
+        </div>
+        <br />
+        <div class="terms-conditions">
+          <h2 class="cat_topic_title cen">Terms and Conditions</h2>
+          <p class="main_para">
+            By joining our Loyalty Program, you agree to our terms and
+            conditions. Points are awarded for purchases made only at our
+            supermarket locations. Points are non-transferable and have no cash
+            value.
+          </p>
+          <ul class="point_one">
+            <li>Membership is free and open to all customers.</li>
+            <li>
+              Points can be redeemed for in-store credits and special offers.
+            </li>
+            <li>
+              The supermarket reserves the right to modify or terminate the
+              loyalty program at any time.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <br /><br />
+    <!--Footer-->
+    <footer>
+      <p>&copy; 2024 FreshMart. All rights reserved.</p>
+      <ul>
+        <li class="nav_li">Privacy Policy</li>
+        <li class="nav_li">Terms of Service</li>
+      </ul>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
