@@ -5,6 +5,9 @@
   padding: 10px;
   margin: 30px auto;
 }
+.containernew{
+  padding: 10px 10%;
+}
 input,
 select,
 textarea {
@@ -42,5 +45,8 @@ textarea {
     font-size: 30px;
     margin: 0;
     padding: 0;
+  }
+  .containernew{
+    padding: 10px;
   }
 }

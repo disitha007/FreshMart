@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Orders</title>
+    <link rel="stylesheet" href="./css/Nav.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/Order.css" />
+    <link rel="stylesheet" href="./css/About.css" />
+    <style>
+      /* table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+      }
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      } */
+      .button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 10px 0;
+      }
+      .button:hover {
+        background-color: #45a049;
+      }
+      .total-price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NavBar-->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="./images/logo.png" alt="logo" class="nav-logo" />
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item nav_li">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./dairy.html" class="nav-link">Dairy</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./vegetables.html" class="nav-link">Vegetables</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./fruit.html" class="nav-link">Fruits</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./MeatSeaFood.html" class="nav-link">Meat & Seafood</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./cosmetics.html" class="nav-link">Cosmetics</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./Cart.html" class="nav-link active_nav">Cart</a>
+          </li>
+          <li class="nav-item nav_li">
+            <a href="./loyalty.html" class="nav-link">Loyalty</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="containernew">
+      <!-- Favorite Orders Table -->
+      <table style="overflow-x: auto" id="favoriteOrdersTable">
+        <thead >
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th> Type</th>
+            <th> Name</th>
+            <th> Type</th>
+            <th> Count</th>
+            <th>Address</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Favorite orders will be populated here -->
+        </tbody>
+      </table>
+
+      <!-- Total Price -->
+      <div class="total-price" id="favoriteTotalPrice">Total Price: $0.00</div>
+
+      <!-- Pay Now Button -->
+      <button class="button" onclick="payNow()">Pay Now</button>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>&copy; 2024 FreshMart. All rights reserved.</p>
+      <ul>
+        <li class="nav_li">Privacy Policy</li>
+        <li class="nav_li">Terms of Service</li>
+      </ul>
+    </footer>
+    <script src="./js/favorites.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
